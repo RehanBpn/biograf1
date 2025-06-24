@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DFF2EB;
+}
+
+header {
+    background-color: #B9E5E8;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: #4A628A;
+    color: #fff;
+}
+nav ul li a:active{
+    background-color: #4A628A;
+    color: #fff;
+    transform: scale(0.95);
+}
+
+section {
+    padding: 40px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0, 1);
+}
+h2{
+    color: #555;
+    margin-bottom: 20px;
+}
+.note{
+    color: red;
+    text-wrap: wrap;
+}
+.tugas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tugas-item {
+    background-color: #e2e2e2;
+    padding: 15px 25px;
+    border-radius: 5px;
+    flex-direction: column;
+    flex: content;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0, 1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+.tugas-item:hover{
+    background-color: #cfcfcf;
+    transform: translateY(-5px);
+}
+.tugas-item a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.biografi-content {
+    display: flex;
+    align-items: left;
+    gap: 20px;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.biografi-contentul{
+    list-style-type: none;
+    padding: 0px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0, 1);
+}
+
+footer {
+    background-color: #B9E5E8;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0, 1);
+}
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: bold;
+}
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+.content-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content-section.active {
+    display: block;
+    opacity: 1;
+}
+
+nav ul li a.active-link {
+    font-weight: bold;
+    color: #00acee;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+@keyframes fade-in {
+    form {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+.sosial:hover{
+color: #000;
+}
